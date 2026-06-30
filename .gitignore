@@ -1,0 +1,9 @@
+Kashif-Portfolio/node_modules
+Kashif-Portfolio/dist
+Kashif-Portfolio/.env
+Kashif-Portfolio/.env.local
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
