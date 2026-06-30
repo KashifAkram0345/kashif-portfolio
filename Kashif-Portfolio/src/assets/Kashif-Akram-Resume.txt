@@ -1,31 +1,44 @@
 Kashif Akram
 Software Engineer
 
-Email: m.kashif6833@gmail.com
-GitHub: https://github.com/KashifAkram0345
-LinkedIn: https://www.linkedin.com/in/kashif-akram-834569301
-Portfolio: https://devops-lab-2026.vercel.app/
-
 Summary
-Software Engineer passionate about building modern web applications with JavaScript, APIs, cloud deployment, and networking fundamentals.
+Building modern web applications with JavaScript, APIs, cloud deployment, and networking fundamentals.
 
-Technical Skills
-Frontend: HTML5, CSS3, JavaScript, React, Tailwind CSS
-Backend: Node.js, Express.js, REST API, Authentication, Authorization, Google OAuth
-Database: MongoDB, PostgreSQL
-DevOps and Deployment: Docker Basics, Render, Vercel, Git, GitHub, DevOps Basics
-Computer Science: Data Structures and Algorithms Basics, Object-Oriented Programming, Computer Networking
-Tools: VS Code, Postman, npm
+Skills
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Node.js
+- Express.js
+- REST API
+- Authentication
+- Authorization
+- Google OAuth
+- MongoDB
+- PostgreSQL
+- Docker (Basics)
+- Git
+- GitHub
+- Render
+- Vercel
+- Computer Networking
+- Data Structures & Algorithms (Basics)
+- Object-Oriented Programming
 
 Projects
-DevOps Lab Platform
-Status: Completed
-Tech: React, Node.js, Express, MongoDB, Vercel
+- DevOps Lab Platform
+- Google OAuth Authentication API
+- Portfolio v2
 
-Google OAuth Authentication API
-Features: Google Login, Authentication, Authorization, REST API, Protected Routes
-Tech: Node.js, Express.js, Google OAuth, MongoDB
+Education
+Intermediate (Class 11) - Current Student
 
-Portfolio v2
-Status: In Progress
-Tech: React, Tailwind CSS, Framer Motion
+Email
+m.kashif6833@gmail.com
+
+GitHub
+https://github.com/KashifAkram0345
+
+LinkedIn
+https://www.linkedin.com/in/kashif-akram-834569301
