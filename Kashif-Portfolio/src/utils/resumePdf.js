@@ -38,7 +38,7 @@ function escapePdfText(text) {
 
 function drawText(lines) {
   return lines
-    .map(({ text, x, y, size = 10, font = 'F1', color = '0 0 0' }) => {
+    .map(({ text, x, y, size = 10, font = 'F1', color = '0.898 0.906 0.922' }) => {
       return `BT /${font} ${size} Tf ${color} rg ${x} ${y} Td (${escapePdfText(text)}) Tj ET`;
     })
     .join('\n');
@@ -46,14 +46,14 @@ function drawText(lines) {
 
 function buildPdf() {
   const lines = [
-    { text: resume.name, x: 54, y: 770, size: 28, font: 'F2', color: '0.07 0.35 0.19' },
-    { text: resume.role, x: 54, y: 744, size: 15, font: 'F2', color: '0.38 0.14 0.65' },
+    { text: resume.name, x: 54, y: 770, size: 28, font: 'F2', color: '1 1 1' },
+    { text: resume.role, x: 54, y: 744, size: 15, font: 'F2', color: '0.22 1 0.53' },
     { text: resume.email, x: 54, y: 720 },
     { text: resume.github, x: 54, y: 704 },
     { text: resume.linkedin, x: 54, y: 688 },
-    { text: 'Summary', x: 54, y: 650, size: 15, font: 'F2', color: '0.07 0.35 0.19' },
+    { text: 'Summary', x: 54, y: 650, size: 15, font: 'F2', color: '1 1 1' },
     { text: resume.summary, x: 54, y: 630 },
-    { text: 'Skills', x: 54, y: 592, size: 15, font: 'F2', color: '0.07 0.35 0.19' },
+    { text: 'Skills', x: 54, y: 592, size: 15, font: 'F2', color: '1 1 1' },
   ];
 
   let y = 572;
@@ -63,7 +63,7 @@ function buildPdf() {
   });
 
   y -= 14;
-  lines.push({ text: 'Projects', x: 54, y, size: 15, font: 'F2', color: '0.07 0.35 0.19' });
+  lines.push({ text: 'Projects', x: 54, y, size: 15, font: 'F2', color: '1 1 1' });
   y -= 20;
   resume.projects.forEach((project) => {
     lines.push({ text: `- ${project}`, x: 66, y });
@@ -71,14 +71,15 @@ function buildPdf() {
   });
 
   y -= 14;
-  lines.push({ text: 'Education', x: 54, y, size: 15, font: 'F2', color: '0.07 0.35 0.19' });
+  lines.push({ text: 'Education', x: 54, y, size: 15, font: 'F2', color: '1 1 1' });
   y -= 20;
   lines.push({ text: resume.education, x: 66, y });
 
   const content = [
-    '0.03 0.03 0.06 rg 0 0 612 792 re f',
-    '0.08 0.09 0.13 rg 34 34 544 724 re f',
-    '0.22 1 0.53 RG 1.2 w 34 34 544 724 re S',
+    '0.012 0.014 0.03 rg 0 0 612 792 re f',
+    '0.026 0.031 0.055 rg 34 34 544 724 re f',
+    '0.22 1 0.53 RG 1.4 w 34 34 544 724 re S',
+    '0.718 0.424 1 RG 0.8 w 44 44 524 704 re S',
     drawText(lines),
   ].join('\n');
 
