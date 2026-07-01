@@ -29,6 +29,10 @@ Skills
 Projects
 - DevOps Lab Platform
 - Google OAuth Authentication API
+- Amazon Clone
+- Tic Tac Toe Game
+- React Landing Page
+- LeetMetric App
 - Portfolio v2
 
 Education
